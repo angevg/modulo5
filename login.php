@@ -1,6 +1,13 @@
 ﻿<?PHP 
 session_start();
 require 'database.php';
+
+if (isset($_SESSION['id_users'])) {
+header('Location: /loginphp');
+}
+
+
+
 if (!empty($_POST['username']) && !empty($_POST['password'])) {
  $records = $conn->prepare('SELECT id_users, username, password FROM users WHERE username=:username');
  $records->bindParam(':username', $_POST['username']);
