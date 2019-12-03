@@ -1,4 +1,4 @@
-<?PHP 
+﻿<?PHP 
 session_start();
 require 'database.php';
 if (!empty($_POST['username']) && !empty($_POST['password'])) {
@@ -11,7 +11,7 @@ $results= $records->fetch(PDO::FETCH_ASSOC);
 
 if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
 $_SESSION['id'] = $results['id_users'];
-header('Locationn: /loginphp');
+header('Location: /loginphp');
 }
 else{
   $message='usuario no existe';
