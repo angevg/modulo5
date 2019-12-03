@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	text-align: center;
+background: linear-gradient(#154360,#1B4F72,#0E6251);
+	min-height: 100vh;
+
+}
+
+h2{
+
+	color:rgba(253, 254, 254,0.5);
+}
+
+a{
+	color:rgba(253, 254, 254,0.5);
+}
+header{	
+	background-color: rgba(253, 254, 254,0.2);
+	border-bottom: 2px solid rgba(253, 254, 254,0.3);
+	padding: 5px 0;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+
+
+
+}
+header a{
+	text-decoration: none;
+		color:rgba(253, 254, 254,0.9);
+}
