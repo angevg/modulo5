@@ -39,7 +39,6 @@ require 'partials/header.php';
 
 <?php else: ?>
 	<h2>Login or SignUp</h2>
-  <a href="Login.php">Login</a> or <a href="signup.php">SignUp</a>
   <a href="Login.php">Login</a> or
    <a href="signup.php">SignUp</a>
 <?php endif; ?>
